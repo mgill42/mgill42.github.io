@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahaveer Gill</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body> 
+  
+    <!--Main menu-->
+    <div class="menu">           
+        <ul>
+            <li><a href="#hello">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+
+        </ul> 
+    </div>
+    <!--Main menu-->
+
+
+    <!--Header-->
+    <header class="main-header"">
+        <div class="container">
+            <div class="personal-profile">
+                <div class="personal-profile__avatar">
+                    <img class="" src="images/profile-picture.jpeg" alt="avatar">
+                </div>
+                <div class="personal-profile-details">
+                    <p class="personal-profile__name">Mahaveer Gill</p>
+                    <p class="personal-profile__work">Software Engineer</p>
+                    <div class="personal-profile__contacts">
+                        <dl class="contact-list contact-list__opacity-titles">
+                            <dt>GitHub:</dt>
+                            <dd><a href="https://github.com/mgill42" target="_blank">MahaveerGill</a></dd>
+                            <dt>LinkedIn:</dt>
+                            <dd><a href="https://uk.linkedin.com/in/mahaveer-gill-a9196bb0" target="_blank">Mahaveer Gill</a>
+                            </dd>
+                            <dt>Email:</dt>
+                            <dd><a href="mailto:m.gill42@hotmail.com">m.gill42@hotmail.com</a></dd>
+                            <dt>Location:</dt>
+                            <dd>Gravesend, UK</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Hello-->
+    <section id="hello" class="container section">
+        <h2 id="hello_header" class="section__title" style="text-indent: 0px;"> About Me</h2>
+        <p class="section__description">
+            I am an experienced IT professional with a strong background in asset management systems, 
+            network management, and technical support. Over the past several years, I've had the privilege of working in a diverse 
+            IT environment where I've honed my problem-solving, teamwork, and leadership abilities. My proficiency extends across 
+            multiple areas of IT infrastructure, from designing and maintaining systems to troubleshooting and optimizing performance.
+            <br>
+            <br>
+            As much as I am fond of IT and the various roles I've played, I've developed a growing passion for software development. 
+            I have invested my free time in learning languages like Swift, C#, and JavaScript, and have a solid understanding of 
+            software development lifecycle, Agile methodologies, and version control systems. I am particularly drawn to the dynamic 
+            nature of software development, the constant evolution, and the power to create practical solutions to everyday challenges.
+        </p>
+        <button id="download-pdf-button" class="button-cv"><a href="./files/mahaveergillCV Version 2.pdf" download="mahaveergillCV">DOWNLOAD CV</a></button>
+    </section>
+    <!--Hello-->
+
+
+
+      
+
+    <!--Portfolio-->
+    <section id="portfolio" class="container section">
+         <h2 id="portfolio_header" class="section__title">Personal Projects</h2>  
+        <div class="portfolio-menu">
+            <nav>
+                <ul>
+                    <li><a href="#apps" data-portfolio-target-tag="Apps">Apps</a></li>
+                    <li><a href="#games" data-portfolio-target-tag="Games">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="portfolio-cards">
+            <!-- Apps -->
+            <div id="apps" class="project-card" data-toggle="modal" data-target="#Magi" data-portfolio-tag="Apps">
+                <!--Image Slideshow-->
+                <div class="slideshow-container" id="slideshow1">
+                <div class="slide">
+                    <img src="images/MagiApp/IMG_1930.PNG" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="images/MagiApp/IMG_1931.PNG" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="images/MagiApp/IMG_1932.PNG" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="images/MagiApp/IMG_1933.PNG" alt="Slide 4">
+                </div>
+                <div class="slide">
+                    <img src="images/MagiApp/IMG_1934.PNG" alt="Slide 5">
+                </div>
+                    
+                <a class="prev" onclick="changeSlide(1, -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, 1)">&#10095;</a>
+             </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Magi (<a href="https://apps.apple.com/us/app/magi-mtg-life-counter/id6444858862" target="_blank" rel="noopener noreferrer" class="project-card__link2">App Store</a>)
+                    </h3>
+                    <p class="project-card__description">
+                        Magi - MTG Life Counter is a simple, easy to use Magic the Gathering game tracking app.
+                        <br>
+                        <br>
+                        Key Features:
+                        <br>
+                        <br>
+                        - Track scores of up to 4 players.<br>
+                        - Keep track of counters such as energy and poison.<br>
+                        - Roll up to 10 dices at a time, with multiple dices to choose from.<br>
+                        - Flip coins<br>
+                        - Intuative and easy to use UI, allowing you to focus on the game.            
+                    </p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>SwiftUI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="apps" class="project-card" data-toggle="modal" data-target="#ITAssets" data-portfolio-tag="Apps">
+                    <!--Image Slideshow-->
+                <div class="slideshow-container" id="slideshow2">
+                    <div class="slide">
+                    <img src="images/ITAssetsApp/IMG_1917.PNG" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                    <img src="images/ITAssetsApp/IMG_1918.PNG" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                    <img src="images/ITAssetsApp/IMG_1919.PNG" alt="Slide 3">
+                    </div>
+                    <div class="slide">
+                    <img src="images/ITAssetsApp/IMG_1920.PNG" alt="Slide 4">
+                    </div>
+                    <div class="slide">
+                    <img src="images/ITAssetsApp/IMG_1921.PNG" alt="Slide 5">
+                    </div>
+                    <div class="slide">
+                    <img src="images/ITAssetsApp/IMG_1922.PNG" alt="Slide 6">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(2, -1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(2, 1)">&#10095;</a>
+                </div>
+                <div class="project-card__info">
+                    <h3 class="project-card__title">IT Asset Manager (<a href="https://github.com/mgill42/ITAssetManager" target="_blank" rel="noopener noreferrer" class="project-card__link2">GitHub</a>)
+                    </h3>
+                    <p class="project-card__description">
+                        A fully functional IT Asset Managements system for iOS. I built this app to help my understanding in managing a database on a mobile platform using CoreDate, a framework provided by Apple to save permanent data for offline use.
+                        <br>
+                        <br>
+                        Key features:
+                        <br>
+                        <br>
+                        - Intuitive IT management on a mobile platform. <br>
+                        - Create, read, update and delete data entries. <br>
+                        - Archive assets. <br>
+                        - Easy to use UI following Apple's design guidelines.
+                    </p>
+          
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>SwiftUI</li>
+                        <li>CoreData</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="apps" class="project-card" data-toggle="modal" data-target="#Pokedex" data-portfolio-tag="Apps">
+            <!--Image Slideshow-->
+            <div class="slideshow-container" id="slideshow4">
+                <div class="slide">
+                    <img src="images/Pokedex/IMG_1946.PNG" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="images/Pokedex/IMG_1947.PNG" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="images/Pokedex/IMG_1948.PNG" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="images/Pokedex/IMG_1949.PNG" alt="Slide 4">
+                </div>
+                <div class="slide">
+                    <img src="images/Pokedex/IMG_1950.PNG" alt="Slide 5">
+                </div>
+                
+                <a class="prev" onclick="changeSlide(4, -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(4, 1)">&#10095;</a>
+            </div>
+                <div class="project-card__info">
+                    <h3 class="project-card__title">Pokedex (<a href="https://github.com/mgill42/pokedex" target="_blank" rel="noopener noreferrer" class="project-card__link2">GitHub</a>)</h3>
+
+                    <p class="project-card__description">
+                        A Pokedex app that I built to help me learn how to make network request to a REST API and also to present the retrieved data in a fun and intuitive way.
+                    </p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>SwiftUI</li>
+                        <li>SwiftUI</li>
+
+                        <li>RESTful API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="games" class="project-card" data-toggle="modal" data-target="#DodgeTheSquares" data-portfolio-tag="Games">
+                        <!--Image Slideshow-->
+                     <div class="slideshow-container" id="slideshow3">
+                            <div class="slide">
+                            <img src="images/GeoDodge/IMG_1938.PNG" alt="Slide 1">
+                            </div>
+                            <div class="slide">
+                            <img src="images/GeoDodge/IMG_1939.PNG" alt="Slide 2">
+                            </div>
+                            <div class="slide">
+                            <img src="images/GeoDodge/IMG_1940.PNG" alt="Slide 3">
+                            </div>
+                    
+                            <a class="prev" onclick="changeSlide(3, -1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(3, 1)">&#10095;</a>
+                    </div>
+                <div class="project-card__info">
+                    <h3 class="project-card__title">Dodge The Squares (<a href="https://apps.apple.com/us/app/dodge-the-squares/id6445866660" target="_blank" rel="noopener noreferrer" class="project-card__link2">App Store</a>)
+                    </h3>
+                    <p class="project-card__description">
+                        With its simple yet addictive gameplay, Dodge the Squares challenges your quick reflexes and strategic skills as you dodge countless projectiles. With each passing moment, the game gets tougher and more challenging
+                    </p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>SpriteKit</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+    <!--Portfolio-->
+
+
+    <!--Resume-->
+
+    <section id="resume" class="container section">
+        <h2 id="resume_header" class="section__title" >Resume</h2>  
+    
+        <div class="resume-list">
+            <h3 class="resume-list_title">Employment</h3>
+            <!-- Natural Resources Institute -->
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">Natural Resources Institute</p>
+                <p class="resume-list__block-date">November 2019 - Current</p>
+                <p> IT Support Officer </p>
+                <p> 
+                    - Provide IT Support to scientist and lecturers. <br>
+                    - Install, maintain and support scientific equipment <br>
+                    - Maintain public Joomla website <br>
+                    - Manage Google Analytics  <br>
+                    - Maintain, manage and develop IT asset management system <br>
+                    - Manage HPC's (High Perfomance Computer)<br>
+                </p>
+            </div>
+            
+            <!-- University of Greenwich -->
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">University of Greenwich</p>
+                <p class="resume-list__block-date">May 2019 - November 2019</p>
+                <p> IT Projects Officer </p>
+                <p> Deploy Windows devices and provide IT support to computer labs</p>
+            </div>
+
+            <h3 class="resume-list_title">Education</h3>
+
+               <!-- University of Greenwich -->
+             <div class="resume-list__block">
+                <p class="resume-list__block-title">University of Greenwich</p>
+                <p class="resume-list__block-date">2014 - 2018</p>
+                <p> BEng Computer Engineering </p>
+                <p> Grade: 2:1</p>
+            </div>
+
+            <!-- University of Greenwich -->
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">Saint George's Church of England Secondary School</p>
+                <p class="resume-list__block-date">2006 - 2012</p>
+                <p> 10+ GSCE's A-C </p>
+                <p> A Level Computing, Biology, Chemistry </p>
+            </div>
+
+    </section>
+
+    <!--Resume-->
+
+     <!--Footer-->
+
+
+        <div class="footer">
+            <p>Mahaveer Gill</p>
+            <a href="https://github.com/mgill42" target="_blank"><img class="" src="./images/github.png" alt="github-img"></a>
+        </div>
+
+     <!--Footer-->
+
+    <script src="app.js"></script>
+    <script src="slide.js"></script>
+</body>
+</html>
