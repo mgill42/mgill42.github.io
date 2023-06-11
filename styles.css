@@ -535,7 +535,7 @@ li a {
     .personal-profile .personal-profile__avatar{
         display:none
     }
-    .project-card__img {
+    .slideshow-container {
         display: none;
     }
 
