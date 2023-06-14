@@ -535,6 +535,9 @@ li a {
     .personal-profile .personal-profile__avatar{
         display:none
     }
+    .personal-profile__name {
+        padding-top: 20px;
+    }
     .slideshow-container {
         display: none;
     }
